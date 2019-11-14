@@ -4,7 +4,7 @@ server:
 eureka:
   client:
     service-url:
-    defaultZone: http://localhost:9001/eureka/
+      defaultZone: http://localhost:9001/eureka/
 
 spring:
   application:
@@ -18,3 +18,4 @@ zuul:
     api-b:
       path: /api-b/**
       serviceId: service-feign
+
