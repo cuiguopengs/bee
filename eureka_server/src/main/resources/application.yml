@@ -1,4 +1,5 @@
-
+server:
+  port: 9001
 
 eureka:
   instance:
@@ -8,7 +9,3 @@ eureka:
     fetch-registry: false
     eureka-serverUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-
-server:
-  port: 9001
-
