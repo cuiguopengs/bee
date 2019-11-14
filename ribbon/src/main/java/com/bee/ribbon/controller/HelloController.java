@@ -15,6 +15,7 @@ public class HelloController {
 
     @RequestMapping(value = "/hi", method = RequestMethod.GET)
     public String hi(@RequestParam(value = "name") String name) {
+        System.out.println("ribbon has running ");
         return helloService.hiService(name);
     }
 

@@ -15,7 +15,7 @@ public class HiController {
 
     @RequestMapping(value = "/hi", method = RequestMethod.GET)
     public String sayHi(@RequestParam(value = "name") String name) {
-        System.out.println("feign has run once");
+        System.out.println("feign has running");
         return schedualServiceHi.sayHiFromClientOne(name);
 
     }
