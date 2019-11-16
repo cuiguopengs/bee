@@ -9,8 +9,11 @@ spring:
       label: master
       profile: dev
       uri: http://localhost:7001
+      discovery:
+        enabled: true
+        service-id: server-config
 
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:9001/eureka/
+      defaultZone: http://localhost:9002/eureka/
