@@ -10,16 +10,7 @@ spring:
       profile: dev
       uri: http://localhost:7001
 
-
-
-
-#spring.application.name=config-client
-#spring.cloud.config.label=master
-#spring.cloud.config.profile=dev
-#spring.cloud.config.uri= http://localhost:7001/
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:9001/eureka/
-
-#server.port=7002
